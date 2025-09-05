@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+This project is a modern e-commerce web application built using React, React Router, Bootstrap, and Context API. It demonstrates how to design a functional shopping platform with dynamic product listings, category filters, and detailed product views.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The application uses a custom API hook (useCustomApi) to fetch data from a local JSON server (http://localhost:3000/products), making it easy to switch between categories and fetch product details dynamically. This architecture ensures scalability and reusability across components.
 
-## Available Scripts
+✨ Key Features
 
-In the project directory, you can run:
+Dynamic Routing with React Router – Implemented nested routes with createBrowserRouter, providing a smooth navigation experience.
 
-### `npm start`
+Navigation Bar – Responsive navbar with links to Home, About, Login, Register, Contact, and Product pages.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Theme Switcher (Light/Dark Mode) – Context API powers a global theme provider, allowing users to toggle between light and dark themes dynamically.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Category-based Filtering – Users can view all products or filter by categories like Smartphone, Smartwatch, Smart TV, Washing Machine.
 
-### `npm test`
+Product Details Page – Dynamic route /productdetails/:pid fetches and displays detailed product information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Loading State Handling – Displays a Bootstrap spinner while fetching data, enhancing user experience.
 
-### `npm run build`
+Reusable Components – CardList and ProductDetails ensure modular, maintainable code.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Error Handling – Dedicated Error component handles invalid routes or missing pages gracefully.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend: React.js, React Router DOM, Bootstrap 5, Context API
 
-### `npm run eject`
+Backend (Mock API): JSON Server (localhost REST API simulation)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Styling: Bootstrap, Custom CSS (index.css)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tools: Git, npm, VS Code
